@@ -1,1 +1,3 @@
-
+1.python环境配置：pip install -r requestments.txt
+2.预训练权重下载：wget https://github.com/AndreyGuzhov/AudioCLIP/releases/download/v0.1/AudioCLIP-Full-Training.pt
+3.将下载好的AudioCLIP-Full-Training.pt权重放在assets目录下即可
