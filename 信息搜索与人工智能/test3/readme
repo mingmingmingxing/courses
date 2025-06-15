@@ -1,5 +1,6 @@
 1.环境配置和预权重下载跟test2一样
 
+
 2.上传前已删除文件：
 （1）暂未明白用途"test3\AudioCLIP\assets\bpe_simple_vocab_16e6.txt.gz"
 （2）ffprobe.exe和ffmpeg.exe，需要时可从网上下载然后把其所在文件夹加入环境变量，再重启终端即可。"test3\AudioCLIP\ffmpeg.exe"
@@ -10,3 +11,25 @@ test3\AudioCLIP\vgg\pretrained\bert-base-uncased\config.json
 test3\AudioCLIP\vgg\pretrained\bert-base-uncased\pytorch_model.bin
 test3\AudioCLIP\vgg\pretrained\bert-base-uncased\tokenizer_config.json
 test3\AudioCLIP\vgg\pretrained\bert-base-uncased\vocab.txt
+
+
+3.任务说明
+任务1：利用AudioCLIP模型完成音频分类任务。 
+数据集：提供的带有标签的音频数据集，包括音频以及对应的音频标签（总共50个标签）。
+代码：见附件代码及说明文档
+说明：数据集有50个环境语义标签，请同学们用给定的音频完成音频分类任务。
+
+任务2：利用AudioCLIP模型完成文本对音频的检索。 
+数据集：作业一中爬取的视频
+代码：见附件代码及说明文档
+说明：选取在作业一中爬取的部分视频，通过自己设计文本完成文本对音频的检索。
+
+选做1：利用AudioCLIP模型完成音频对图像的检索。 
+数据集：自己爬取的视频
+代码：根据要求请同学们自行完成
+说明：对于一个视频片段，请同学们把与整段音频对应的画面片段都找出来。
+（提示：将音频与视频的所有帧计算相似度，完成对所有帧的查找检索）
+
+选做2：调研多模态检索任务，设计一个模型完成音频与文本或音频与图像的检索。 
+说明：调研多模态检索任务，自己设计跨模态模型，以获得更加符合要求的检索结果。
+（提示：比较简单的可以应用诸如vgg，ResNet；难度大一点的可以应用（跨模态）大语言模型等）
